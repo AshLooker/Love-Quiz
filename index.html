@@ -11,27 +11,80 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/script.js"></script>
     <title>Love Quiz</title>
     <link rel="icon" type="image/x-icon" href="puzzle-piece.png">
-
+    <script src=""></script> 
 </head>
 
 <body>
-    <h1 class="heading">
-        <img class="logo" src="puzzle-piece (1).png" alt="logo"> Love Quiz!
-    </h1>
 
-    <div id="quiz" class="quiz-area">
+    <section id="header">
+        <h1 class heading>
+            <img class="logo" src="puzzle-piece (1).png" alt="logo">Love Quiz!
+        </h1>
+    </section>
 
+    <!-- Start button -->
+    <div class="start-btn">
+        <button>Start Quiz</button>
     </div>
 
-    <button class="submit" id="submit-area">Submit Quiz</button>
-
-    <div id="results" class="result-area">
-
-          
+    <!-- rules box-->
+    <div class="rule-box">
+        <div class="rule-title">
+        <span>Rules</span>
     </div>
+    <div class="rule-list">
+        <div class="rule">1. You will have <span>30 seconds</span> to answer each question.</div>
+        <div class="rule">2. You cannot reselect a different answer, once selected</div>
+        <div class="rule">3. Your points will be added up based on the amount of correct answers at the end</div>
+    </div>
+    <div class="buttons">
+        <button class="quit">Quit</button>
+        <button class="restart">Continue</button>
+    </div>
+ </div>
 
-    <script src="assets/js/script.js"></script>
+ <!-- Quiz Area -->
+ <div class="quiz-area">
+     <header>
+         <div class="title">Just say YIKES! and move on...I'm kidding, you got this!</div>
+         <div class="timer">
+             <div class="time">Time Remaining</div>
+             <div class="timer-sec">30</div>
+         </div>
+     </header>
+     <section>
+         <div class="question">
+             <span>What was the first computer that had a colour display?</span>
+         </div>
+         <div class="answer-list">
+             <div class="answers">
+                 <span>A. Douglas Crockford</span>
+                 <div class="icon tick"><i class="fa-solid fa-check"></i></div>
+             </div>
+             <div class="answers">
+                <span>B. Sheryl Sandberg</span>
+                <div class="icon cross"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="answers">
+                <span>C. Brendan Eich</span>
+            </div>
+            <div class="answers">
+                <span>D. Steve Wozniak</span>
+            </div>
+         </div>
+     </section>
+
+     <!-- Quiz Box Footer-->
+     <footer>
+         <div class="total-que">
+             <span><p>2</p>of<p>20</p>Questions</span>
+         </div>
+         <button class="next-btn">Next</button>
+     </footer>
+ </div>
+
 </body>
 </html>
