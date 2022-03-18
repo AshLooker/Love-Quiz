@@ -14,10 +14,14 @@
     <script defer src="assets/js/script.js"></script>
     <title>Love Quiz</title>
     <link rel="icon" type="image/x-icon" href="puzzle-piece.png">
-    <script src=""></script> 
+    <script src="https://kit.fontawesome.com/b50fa909c3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <i class="fa-solid fa-xmark"></i>
+    <i class="fa-solid fa-check"></i>
+    <i class="fa-solid fa-trophy-star"></i>
 
     <section id="header">
         <h1 class heading>
@@ -26,16 +30,16 @@
     </section>
 
     <!-- Start button -->
-    <div class="start-btn">
+    <div class="start_btn">
         <button>Start Quiz</button>
     </div>
 
     <!-- rules box-->
-    <div class="rule-box">
-        <div class="rule-title">
+    <div class="rule_box">
+        <div class="rule_title">
         <span>Rules</span>
     </div>
-    <div class="rule-list">
+    <div class="rule_list">
         <div class="rule">1. You will have <span>30 seconds</span> to answer each question.</div>
         <div class="rule">2. You cannot reselect a different answer, once selected</div>
         <div class="rule">3. Your points will be added up based on the amount of correct answers at the end</div>
@@ -47,19 +51,19 @@
  </div>
 
  <!-- Quiz Area -->
- <div class="quiz-area">
+ <div class="quiz_area">
      <header>
          <div class="title">Just say YIKES! and move on...I'm kidding, you got this!</div>
          <div class="timer">
              <div class="time">Time Remaining</div>
-             <div class="timer-sec">30</div>
+             <div class="timer_sec">30</div>
          </div>
      </header>
      <section>
          <div class="question">
              <span>What was the first computer that had a colour display?</span>
          </div>
-         <div class="answer-list">
+         <div class="answer_list">
              <div class="answers">
                  <span>A. Douglas Crockford</span>
                  <div class="icon tick"><i class="fa-solid fa-check"></i></div>
@@ -79,12 +83,29 @@
 
      <!-- Quiz Box Footer-->
      <footer>
-         <div class="total-que">
+         <div class="total_question">
              <span><p>2</p>of<p>20</p>Questions</span>
          </div>
-         <button class="next-btn">Next</button>
+         <button class="next_btn">Next</button>
      </footer>
  </div>
+
+ <!-- Results area -->
+ <div class="result_area">
+     <div class="icon">
+        <i class="fa-solid fa-trophy-star"></i>
+     </div>
+     <div class="completion-text">Congratualtions! You've just completed the Quiz!!</div>
+     <div class="score">
+         <span>Sorry, you only got <p>2</p>out of <p>20</p>Have another go!</span>
+ </div>
+ <div class="buttons">
+     <button class="restart">Replay</button>
+     <button class="quit">Quit</button>
+ </div>
+ </div>
+
+
 
 </body>
 </html>
