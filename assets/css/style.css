@@ -35,8 +35,8 @@ h1{
   transition: all 0.2s ease;
 }
 
-.rule_box.activeRule,
-.quiz_area.actveQuiz{
+.rule_box.activeRule, 
+.quiz_area.activeQuiz{
   z-index: 5;
   opacity: 1;
   pointer-events: auto;
@@ -134,7 +134,7 @@ h1{
   background:rgb(219, 7, 7);
 }
 
-.quiz_area{
+.quiz_area {
   width: 800px;
   background: #fff;
   border-radius: 5px; 
