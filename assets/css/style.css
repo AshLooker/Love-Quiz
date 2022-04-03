@@ -36,7 +36,8 @@ h1{
 }
 
 .rule_box.activeRule, 
-.quiz_area.activeQuiz{
+.quiz_area.activeQuiz,
+.result_area.activeResult{
   z-index: 5;
   opacity: 1;
   pointer-events: auto;
@@ -52,6 +53,11 @@ h1{
   border: 0px;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.start_btn:hover button{
+  color:#fff;
+  background: rgb(52, 214, 37)
 }
 
 .rule_box{
@@ -114,6 +120,11 @@ h1{
   font-weight: 600;
   cursor: pointer;
   transition: all 0.1s ease;
+}
+
+.rule_box .buttons .restart:hover{
+  color:#fff;
+  background: rgb(52, 214, 37)
 }
 
 .buttons button.restart{
@@ -194,6 +205,14 @@ h1{
   user-select: none;
 }
 
+.quiz_area header .time_line{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  background: red;
+}
+
 .quiz_area section{
   padding: 35px 40px 30px 40px;
   background:#fff;
@@ -210,7 +229,7 @@ h1{
   gap: 10px;
 } 
 
-section .answer_list .answers{
+section .answer_list .options{
   background: #146b8d;
   border: 1px solid #343434;
   border-radius: 5px;
@@ -224,17 +243,17 @@ section .answer_list .answers{
   transition: all 0.1s ease;
 }
 
-section .answer_list .answers:hover{
+section .answer_list .options:hover{
   color: #fff;
   background: #083b50;
   border-color: #fff;
 }
 
-.answer_list .answers:last-child{
+.answer_list .options:last-child{
   margin-bottom: 0px
 }
 
-.answer_list .answers .icon{
+.answer_list .options .icon{
   height: 26px;
   width: 26px;
   border: 2px solid transparent;
@@ -245,22 +264,38 @@ section .answer_list .answers:hover{
   pointer-events: none;
 }
 
-.answer_list .answers .icon.tick{
+.answer_list .options .icon.tick{
   color: rgb(52, 214, 37);
   border-color: rgb(52, 214, 37);
   background:#fff;
 }
 
-.answer_list .answers .icon.cross{
+.answer_list .options .icon.cross{
   color:rgb(219, 7, 7);
   border-color: rgb(219, 7, 7);
   background-color: #fff;
 }
 
+.answer_list .options.correct{
+  color: #fff;
+  background: rgb(28, 161, 16);
+  border-color: rgb(116, 232, 106);
+}
+
+.answer_list .options.incorrect{
+  color: #fff;
+  background: rgb(207, 34, 34);
+  border-color: rgb(176, 115, 117);
+}
+
+.answer_list .options.disabled{
+  pointer-events: none;
+}
+
 .quiz_area footer{
   height: 60px;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 40px 45px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -282,6 +317,7 @@ footer .total_questions span p{
 }
 
 footer .next_btn{
+  display: none;
   height: 50px;
   padding: 0 13px;
   font-size: 20px;
@@ -315,9 +351,15 @@ footer .next_btn:hover{
 
 }
 
+.result_area .icon{
+  font-size: 110px;
+  color: goldenrod;
+  margin-bottom: 10px;
+}
+
 .result_area .completion_text{
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .result_area .score span{
@@ -350,4 +392,9 @@ footer .next_btn:hover{
   border: 1px solid #343434;
   cursor: pointer;
   transition: all 0.1s ease;
+}
+
+.result_area .buttons .restart:hover {
+  color:#fff;
+  background: rgb(52, 214, 37)
 }

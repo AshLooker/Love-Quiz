@@ -16,13 +16,14 @@
     <title>Love Quiz</title>
     <link rel="icon" type="image/x-icon" href="puzzle-piece.png">
     <script src="https://kit.fontawesome.com/b50fa909c3.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
 
     <i class="fa-solid fa-xmark"></i>
     <i class="fa-solid fa-check"></i>
     <i class="fa-solid fa-trophy-star"></i>
+</head>
+
+<body>
+
 
     <section id="header">
         <h1 class heading>
@@ -41,7 +42,7 @@
         <span>Rules</span>
     </div>
     <div class="rule_list">
-        <div class="rule">1. You will have <span>30 seconds</span> to answer each question.</div>
+        <div class="rule">1. You will have <span>15 seconds</span> to answer each question.</div>
         <div class="rule">2. You cannot reselect a different answer, once selected</div>
         <div class="rule">3. Your points will be added up based on the amount of correct answers at the end</div>
     </div>
@@ -54,38 +55,39 @@
  <!-- Quiz Area -->
  <div class="quiz_area">
      <header>
-         <div class="title">Just say YIKES! and move on...I'm kidding, you got this!</div>
+         <div class="title">You've got this!</div>
          <div class="timer">
              <div class="time">Time Remaining</div>
-             <div class="timer_sec">30</div>
+             <div class="timer_sec">15</div>
          </div>
+         <div class="time_line"></div>
      </header>
      <section>
          <div class="question">
-             <span>What was the first computer that had a colour display?</span>
+             <!-- <span>What was the first computer that had a colour display?</span> -->
          </div>
          <div class="answer_list">
-             <div class="answers">
+            <!-- <div class="options">
                  <span>A. Douglas Crockford</span>
                  <div class="icon tick"><i class="fa-solid fa-check"></i></div>
              </div>
-             <div class="answers">
+             <div class="options">
                 <span>B. Sheryl Sandberg</span>
                 <div class="icon cross"><i class="fa-solid fa-xmark"></i></div>
             </div>
-            <div class="answers">
+            <div class="options">
                 <span>C. Brendan Eich</span>
             </div>
-            <div class="answers">
+            <div class="options">
                 <span>D. Steve Wozniak</span>
-            </div>
+            </div> -->
          </div>
      </section>
 
      <!-- Quiz area Footer-->
      <footer>
          <div class="total_questions">
-             <span><p>2</p>of<p>20</p>Questions</span>
+             <!-- <span><p>2</p>of<p>20</p>Questions</span> -->
          </div>
          <button class="next_btn">Next</button>
      </footer>
@@ -93,18 +95,17 @@
 
  <!-- Results area -->
  <div class="result_area">
-     <div class="icon">
-        <i class="fa-solid fa-trophy-star"></i>
-     </div>
-     <div class="completion-text">Congratualtions! You've just completed the Quiz!!</div>
+     <div class="icon"><i class="fa-solid fa-trophy-star"></i>
+    </div>
+     <div class="completion_text">Congratualtions! You've just completed the Quiz!!</div>
      <div class="score">
-         <span>Sorry, you only got <p>2</p>out of <p>20</p>Have another go!</span>
+         <!-- <span>You got <p>2</p>out of <p>20</p>Have another go!</span> -->
  </div>
  <div class="buttons">
      <button class="restart">Replay</button>
      <button class="quit">Quit</button>
  </div>
  </div>
-
+`
 </body>
 </html>
