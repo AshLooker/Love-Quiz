@@ -3,8 +3,8 @@ const rule_box = document.querySelector(".rule_box");
 const quit_btn = rule_box.querySelector(".buttons .quit"); 
 const continue_btn = rule_box.querySelector(".buttons .restart");
 const quiz_area = document.querySelector(".quiz_area");
-const timeCounter = quiz_area.querySelector(".timer .timer_sec");
-const timeLine = quiz_area.querySelector("header .time_line");
+
+
 
 const answer_list = document.querySelector(".answer_list");
 
@@ -22,15 +22,12 @@ continue_btn.onclick = () => {
     quiz_area.classList.add("activeQuiz");
     showQuestions(0);
     questionCounter(1);
-    startTimer(15);
-    startTimerLine(0);
 }
 
 let question_count = 0;
 let question_number = 1;
 let counter;
 let counterLine;
-let timeValue = 15;
 let widthValue = 0;
 let userScore = 0;
 
@@ -44,17 +41,12 @@ restart_quiz.onclick = () =>{
     result_area.classList.remove(".activeResult");
     let question_count = 0;
     let question_number = 1;
-    let timeValue = 15;
     let widthValue = 0;
     let userScore = 0;
     showQuestions(question_count);
     questionCounter(question_number);
-    clearInterval(counter);
-    startTimer(timeValue);
-    clearInterval(counterLine);
     startTimer(widthValue);
-    next_btn.style.display = "none";
-   
+    next_btn.style.display = "none";   
 }
 
 quit.onclick = () =>{
@@ -67,9 +59,6 @@ next_btn.onclick = ()=> {
         question_number++;
         showQuestions(question_count);
         questionCounter(question_number);
-        clearInterval(counter);
-        startTimer(timeValue);
-        clearInterval(counterLine);
         startTimer(widthValue);
         next_btn.style.display = "none";
     }else{
@@ -156,38 +145,26 @@ function startTimer(time){
     counter = setInterval(timer, 1000);
     function timer(){
         timeCounter.textContent = time;
-        time--; 
-        if (time < 9){
-            let addZero = timeCounter.textContent;
-            timeCounter.textContent = "0" + addZero;
-        }
-        if(time < 0){
-            clearInterval(counter);
-            timeCounter.textContent = "00";
-        }
-    }
-}
+        
+            let correctAnswer = questions[question_count].answer;
+            let allOptions = answer_list.children.length;
 
-function startTimerLine(time){
-    counterLine = setInterval(timer, 20);
-    function timer(){
-        time += 1;
-        timeLine.style.width = time + "px";
-        if (time > 799){
-            clearInterval(counterLine);
+            for(let i = 0; i < allOptions; i++) {
+                if(answer_list.children[i].textContent == correctAnswer){
+                    answer_list.children[i].setAttribute("class","options correct");
+                    answer_list.children[i].insertAdjacentHTML("beforeend", tickIcon);
+                }
+            }
+            for (let i = 0; i < allOptions; i++) {
+                answer_list.children[i].classList.add("disabled");
+            }
+            next_btn.style.display = "block";
         }
     }
-}
-
-
-
-
-
-
-
 
 function questionCounter (index){
     const bottom_questions_counter = quiz_area.querySelector(".total_questions");
     let totalQuestionsCounterTag = '<span><p>'+ question_count +'</p>of<p>'+ questions.length +'</p>Questions</span>';
     bottom_questions_counter.innerHTML = totalQuestionsCounterTag;
 }
+
