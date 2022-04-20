@@ -42,7 +42,6 @@ restart_quiz.onclick = () =>{
     let question_count = 0;
     let question_number = 1;
     let widthValue = 0;
-    let userScore = 0;
     showQuestions(question_count);
     questionCounter(question_number);
     startTimer(widthValue);

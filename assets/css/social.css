@@ -1,0 +1,19 @@
+
+.social-media .social-networks {
+    text-align:  center;
+  }
+  
+  .social-media .social-networks > li {
+    display: inline;
+  }
+  
+  .social-media .social-networks i {
+    font-size: 180%;
+    margin: auto;
+    padding: 2%;
+    color: #f8f6f0;
+  }
+  
+  .social-networks i:hover {
+    color: rgb(52, 214, 37);
+  }

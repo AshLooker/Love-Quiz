@@ -11,8 +11,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/social.css">
+    <link rel="stylesheet" href="assets/css/sections.css">
     <script defer src="assets/js/script.js"></script>
     <script defer src="assets/js/questions.js"></script>
+    
     <title>Love Quiz</title>
     <link rel="icon" type="image/x-icon" href="puzzle-piece.png">
     <script src="https://kit.fontawesome.com/b50fa909c3.js" crossorigin="anonymous"></script>
@@ -25,12 +28,15 @@
 <body>
 
 
-    <section id="header">
-        <h1 class heading>
+    <section class="page-header">
+        <h1>
             <img class="logo" src="puzzle-piece (1).png" alt="logo">Love Quiz!
         </h1>
     </section>
 
+    <!-- Quiz section-->
+
+    <section class="Game-area" >
     <!-- Start button -->
     <div class="start_btn">
         <button>Start Quiz</button>
@@ -58,30 +64,14 @@
      </header>
      <section>
          <div class="question">
-             <!-- <span>What was the first computer that had a colour display?</span> -->
          </div>
          <div class="answer_list">
-            <!-- <div class="options">
-                 <span>A. Douglas Crockford</span>
-                 <div class="icon tick"><i class="fa-solid fa-check"></i></div>
-             </div>
-             <div class="options">
-                <span>B. Sheryl Sandberg</span>
-                <div class="icon cross"><i class="fa-solid fa-xmark"></i></div>
-            </div>
-            <div class="options">
-                <span>C. Brendan Eich</span>
-            </div>
-            <div class="options">
-                <span>D. Steve Wozniak</span>
-            </div> -->
          </div>
      </section>
 
      <!-- Quiz area Footer-->
      <footer>
          <div class="total_questions">
-             <!-- <span><p>2</p>of<p>20</p>Questions</span> -->
          </div>
          <button class="next_btn">Next</button>
      </footer>
@@ -93,13 +83,32 @@
     </div>
      <div class="completion_text">Congratualtions! You've just completed the Quiz!!</div>
      <div class="score">
-         <!-- <span>You got <p>2</p>out of <p>20</p>Have another go!</span> -->
  </div>
  <div class="buttons">
      <button class="restart">Replay</button>
      <button class="quit">Quit</button>
  </div>
  </div>
+ </section>
+
+<section class="page-footer">
+    <div class="social-media">
+        <ul class="social-networks">
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram-square"></i></a>
+            </li>
+            <li>
+                <a href="https://pintrest.com" target="_blank" rel="noopener" aria-label="Visit our Pintrest boards (opens in a new tab)"><i class="fab fa-pinterest-square"></i></a>
+            </li>
+        </ul>
+    </div>
+</section>
 
 </body>
 </html>

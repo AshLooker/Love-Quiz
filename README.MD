@@ -66,7 +66,7 @@ developer (Ash Looker)
 ## Design
 
 ### Design Choices 
-The website was designed with a more natural feel to it, it is calm, warm and inviting. I used a parchment background from https://wallpaperaccess.com/parchment-paper to make the website feel more like a book.
+The website was designed with a more computer/technology vibe to it. with the background image used from https://www.freepik.com/free-vector/abstract-colorful-technology-dotted-wave-background_6166234.htm?epik=dj0yJnU9c2ZkdEN5LTEwemRtcnlLUUxwazUwd2VpaVhvRW9CaFcmcD0wJm49VlN3Wk5jaTd4SldzeUNyX2YxdllfQSZ0PUFBQUFBR0paay1r 
 
 ### Background()
 
@@ -88,12 +88,11 @@ For the color scheme, off white was used fort the windows, and blue was used for
 Quicksand was used for as the font. Sans-serif was used as fallback. 
 
 ### Structure
-The page is structured in a regognizable, user friendly, and easy to learn way. Upon arrrival to the website the user sees a familiar type of navigation bar with the logo of the shop on the right side and navagation links on the left.
-The Website consists of 4 seperate pages:
-- A Homepage with a little section for about us, contact and address
-- An About Us page, where we have more information about the shop and what we sell.
-- An image gallery, showcasing different herbs and ointments and what you might expect to find in-store.
-- A sign up page, so users can be notified when new items arrive in store
+The page is structured in an easy to navigate fashion, is user friendly, and easy to learn. Upon arrrival to the website the user will be introduced with an interactive start button. once clicked the quiz will begin.
+The Website consists of 3 seperate windows
+- Rule window
+- Quiz window 
+- Result window
 
 ### Wireframes
 
