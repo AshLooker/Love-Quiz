@@ -5,13 +5,15 @@
     color: #ffffee;
     font-size: 30px;
     background-color: #04123ac4;
+    height: fit-content;
 }
 
 .game-area {
-width: auto;
-height:500px;
+    width: auto;
+    height:690px;
 }
 
 .page-footer {
-width: auto;
+    width: auto;
+    height: 65px;
 }
