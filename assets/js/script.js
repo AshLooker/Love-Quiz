@@ -1,22 +1,25 @@
+//all required elements
 const start_btn = document.querySelector(".start_btn button"); 
 const rule_box = document.querySelector(".rule_box"); 
 const quit_btn = rule_box.querySelector(".buttons .quit"); 
-const continue_btn = rule_box.querySelector(".buttons .restart");
+const continue_btn = rule_box.querySelector(".buttons .continue");
 const quiz_area = document.querySelector(".quiz_area");
 
 
 
 const answer_list = document.querySelector(".answer_list");
 
-
+//if start button is clicked
 start_btn.onclick = () => {
     rule_box.classList.add("activeRule");
 }
 
+//if quit button is clicked
 quit_btn.onclick = () => {
     rule_box.classList.remove("activeRule");
 }
 
+//if continue button is clicked
 continue_btn.onclick = () => {
     rule_box.classList.remove("activeRule");
     quiz_area.classList.add("activeQuiz");
@@ -27,7 +30,6 @@ continue_btn.onclick = () => {
 let question_count = 0;
 let question_number = 1;
 let counter;
-let counterLine;
 let widthValue = 0;
 let userScore = 0;
 
@@ -44,8 +46,10 @@ restart_quiz.onclick = () =>{
     let widthValue = 0;
     showQuestions(question_count);
     questionCounter(question_number);
-    startTimer(widthValue);
-    next_btn.style.display = "none";   
+    clearInterval(counter);
+    showResult(widthValue);
+    next_btn.style.display = "none";
+    
 }
 
 quit.onclick = () =>{
@@ -58,7 +62,6 @@ next_btn.onclick = ()=> {
         question_number++;
         showQuestions(question_count);
         questionCounter(question_number);
-        startTimer(widthValue);
         next_btn.style.display = "none";
     }else{
         console.log("Questions Completed");
@@ -90,7 +93,6 @@ let crossIcon = '<div class="icon cross"><i class="fa-solid fa-xmark"></i></div>
 
 function optionSelected(answer){
     clearInterval(counter);
-    clearInterval(counterLine);
     let userAnswer = answer.textContent;
     let correctAnswer = questions[question_count].answer;
     let allOptions = answer_list.children.length;
@@ -139,27 +141,23 @@ function showResultArea() {
     }
 }
 
+function showResult(){
+    let correctAnswer = questions[question_count].answer;
+    let allOptions = answer_list.children.length;
 
-function startTimer(time){
-    counter = setInterval(timer, 1000);
-    function timer(){
-        timeCounter.textContent = time;
-        
-            let correctAnswer = questions[question_count].answer;
-            let allOptions = answer_list.children.length;
-
-            for(let i = 0; i < allOptions; i++) {
-                if(answer_list.children[i].textContent == correctAnswer){
-                    answer_list.children[i].setAttribute("class","options correct");
-                    answer_list.children[i].insertAdjacentHTML("beforeend", tickIcon);
-                }
-            }
-            for (let i = 0; i < allOptions; i++) {
-                answer_list.children[i].classList.add("disabled");
-            }
-            next_btn.style.display = "block";
+    for(let i = 0; i < allOptions; i++) {
+        if(answer_list.children[i].textContent == correctAnswer){
+            answer_list.children[i].setAttribute("class","options correct");
+            answer_list.children[i].insertAdjacentHTML("beforeend", tickIcon);
         }
     }
+    for (let i = 0; i < allOptions; i++) {
+        answer_list.children[i].classList.add("disabled");
+    }
+    next_btn.style.display = "block";
+}
+
+
 
 function questionCounter (index){
     const bottom_questions_counter = quiz_area.querySelector(".total_questions");

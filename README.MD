@@ -93,14 +93,14 @@ The Website consists of 3 seperate windows
 - Rule window
 - Quiz window 
 - Result window
+- social media
 
 ### Wireframes
 
-- Home
-- About us 
-- Gallery
-- Contact
-- Sign up
+- Home screen
+- Rule area
+- Quiz area
+- Result area
 
 ## Technologies Used 
 
@@ -124,13 +124,11 @@ The page consists of 1 page and 3 interactive windows
 - Featured at the top of the page
 
 ### Footer 
-- 
-
-### Sign Up Page
-- simple design for users to create an account
-
-### About Us Page
-- Gives a description of the Apothecary shop with an image of the interior
+- social media
+- Facebook 
+- Instagram
+- Pintrest 
+- Twitter
 
 ## HTML Validation 
 The W3C Markup Validation was used to validate the HTML of the website. All pages, except the sign-in page had no errors., but a few warnings. The errors shown on the sign in page exist due to the way I coded the form.
@@ -141,7 +139,7 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 ### Bugs
 
 Known Bugs:
-- Gallery page has scaling issues
+- 
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
