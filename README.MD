@@ -119,7 +119,7 @@ The page consists of 1 page and 3 interactive windows
 - Featured at the top of the page
 
 ### Footer 
-- social media
+social media
 - Facebook 
 - Instagram
 - Pintrest 
@@ -136,6 +136,7 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 
 Known Bugs:
 - counter starts on 0 instead of 1 
+- Trophy star doesn't appear
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
