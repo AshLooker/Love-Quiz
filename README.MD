@@ -12,7 +12,6 @@ developer (Ash Looker)
 2. [User Experience](#user-experience)
     1. [Target Audience](#target-audience)
     2. [User Requrements and Expectations](#user-requrements-and-expectations)
-    3. [User Stories](#user-stories)
 3. [Design](#design)
     1. [Design Choices](#design-choices)
     2. [Background](#background)
@@ -52,16 +51,6 @@ developer (Ash Looker)
 - Simple content that user can quickly read 
 - Accessibility
 
-### User Stories
-
-#### First-time User 
--
-
-#### Returning User 
--
-
-#### Site Owner
--
 
 ## Design
 
@@ -89,7 +78,13 @@ Quicksand was used for as the font. Sans-serif was used as fallback.
 
 ### Structure
 The page is structured in an easy to navigate fashion, is user friendly, and easy to learn. Upon arrrival to the website the user will be introduced with an interactive start button. once clicked the quiz will begin.
-The Website consists of 3 seperate windows
+
+Depending on the amount of correct answers, you will be met with 3 messages.
+- user score >19 Awesome!! You got ... out of ... You are a Wizard
+- user score >10 Nice! you got ... out of ... Can you do better?
+- user score is bellow 10 Sorry, you got ... out of ... Have another try!
+
+The Website consists of 3 seperate windows. 
 - Rule window
 - Quiz window 
 - Result window
@@ -139,7 +134,7 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 ### Bugs
 
 Known Bugs:
-- 
+- counter starts on 0 instead of 1 
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
@@ -165,7 +160,7 @@ You can clone the repository by following these steps:
 Images used, are not owned by the developer.
 
 ### Code
-- Code that was based on 
+- Code that was based on https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s
 
 ## Acknowledgments 
 I would like to take the opportuninty to thank:

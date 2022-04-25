@@ -6,7 +6,6 @@ const continue_btn = rule_box.querySelector(".buttons .continue");
 const quiz_area = document.querySelector(".quiz_area");
 
 
-
 const answer_list = document.querySelector(".answer_list");
 
 //if start button is clicked
@@ -27,6 +26,7 @@ continue_btn.onclick = () => {
     questionCounter(1);
 }
 
+
 let question_count = 0;
 let question_number = 1;
 let counter;
@@ -35,33 +35,21 @@ let userScore = 0;
 
 const next_btn = quiz_area.querySelector(".next_btn");
 const result_area = document.querySelector(".result_area");
-const restart_quiz = result_area.querySelector(".buttons .restart");
 const quit = result_area.querySelector(".buttons .quit");
 
-restart_quiz.onclick = () =>{
-    quiz_area.classList.add(".activeQuiz"); 
-    result_area.classList.remove(".activeResult");
-    let question_count = 0;
-    let question_number = 1;
-    let widthValue = 0;
-    showQuestions(question_count);
-    questionCounter(question_number);
-    clearInterval(counter);
-    showResult(widthValue);
-    next_btn.style.display = "none";
-    
-}
 
 quit.onclick = () =>{
     window.location.reload();
 }
 
+//if next button is clicked
 next_btn.onclick = ()=> {
     if(question_count < questions.length - 1) {
         question_count++;
         question_number++;
         showQuestions(question_count);
         questionCounter(question_number);
+        clearInterval(counter);
         next_btn.style.display = "none";
     }else{
         console.log("Questions Completed");

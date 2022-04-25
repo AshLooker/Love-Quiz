@@ -13,7 +13,7 @@
     color:#fff;
     background: rgb(52, 214, 37)
   }
-
+ 
   /* rule_box buttons */
 
   .rule_box .buttons{
@@ -38,20 +38,20 @@
     transition: all 0.1s ease;
   }
   
-  .rule_box .buttons .restart:hover{
-    color:#fff;
-    background: rgb(52, 214, 37)
-  }
-  
-  .buttons button.restart{
-    color: #ffffee;
-    background-color: #146b8d;
-  }
-  
   .buttons button.restart:hover{
     background: #083b50;
   }
   
+  .buttons .continue {
+    color: #ffffee;
+    background-color: #146b8d;
+  }
+
+  .buttons .continue:hover {
+    color:#fff;
+    background: rgb(52, 214, 37)
+  }
+
   .buttons button.quit{
     color: #ffffee;
     background-color: #146b8d;
@@ -60,7 +60,7 @@
   .buttons button.quit:hover{
     background:rgb(219, 7, 7);
   }
-  
+
 /* result area buttons */
 
 .result_area .buttons{
@@ -82,11 +82,7 @@
     transition: all 0.1s ease;
   }
   
-  .result_area .buttons .restart:hover {
-    color:#fff;
-    background: rgb(52, 214, 37)
-  }
-  
+
 /* footer buttons */
 
   footer .next_btn{
