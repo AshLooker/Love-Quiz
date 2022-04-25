@@ -126,7 +126,8 @@ The page consists of 1 page and 3 interactive windows
 - Twitter
 
 ## HTML Validation 
-The W3C Markup Validation was used to validate the HTML of the website. All pages, except the sign-in page had no errors., but a few warnings. The errors shown on the sign in page exist due to the way I coded the form.
+The W3C Markup Validation was used to validate the HTML of the website. No errors, except three warningd, due to no headers. The errors shown on the page exist due to the way I coded the form.
+
 
 ### CSS Validation
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. It passes with no errors

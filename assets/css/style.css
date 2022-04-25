@@ -32,7 +32,6 @@ body{
   z-index: 5;
   opacity: 1;
   pointer-events: auto;
-  transform: translate(-50% -50%) scale(1);
 }
 
 
@@ -47,7 +46,6 @@ body{
   box-shadow: 0 0 10px 2px;
   opacity: 0;
   pointer-events: none;
-  transform: translate(-50% -50%) scale(0.9);
 }
 
 .rule_box .rule_title{
@@ -88,7 +86,6 @@ body{
   box-shadow: 0 0 10px 2px;
   opacity: 0;
   pointer-events: none;
-  transform: translate(-50% -50%) scale(0.9);
 }
 
 .quiz_area header{
@@ -132,7 +129,7 @@ section .answer_list .options{
   border-radius: 5px;
   padding: 18px 25px;
   margin-bottom: 15px;
-  font-family: 17px;
+  font-size: 17px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -227,8 +224,6 @@ footer .total_questions span p{
   justify-content: space-between;
   opacity: 0;
   pointer-events: none;
-  transform: translate(-50% -50%) scale(0.9);
-
 }
 
 .result_area .icon{
